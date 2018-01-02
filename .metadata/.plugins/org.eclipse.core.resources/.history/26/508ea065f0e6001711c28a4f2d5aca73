@@ -1,0 +1,18 @@
+package com.chedl.controller;
+
+public class Task {
+	private static  int bean = 80;
+	public void fun(){
+		while (true) {
+			synchronized(this) {
+				String s = Thread.currentThread().getName();
+				if (bean == 0) {
+					throw  new RuntimeException("√ª∂π¡À");
+				}
+				bean --;
+				System.out.println(s + " " + bean);
+				Thread.yield();
+			}
+		}
+	}
+}

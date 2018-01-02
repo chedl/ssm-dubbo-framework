@@ -1,0 +1,27 @@
+package com.chedl.controller;
+
+public class Test extends Thread{
+	
+		public static void main(String[] args) {
+			Test t1 = new Test();
+			Test t2 = new Test();
+			t1.start();
+			t2.start();
+		}
+	
+
+		private  static  int bean = 80;
+		public  void run() {
+			synchronized(this) {
+				String s = Thread.currentThread().getName();
+				while (true) {
+					if (bean == 0) {
+						throw  new RuntimeException("√ª∂π¡À");
+					}
+					bean --;
+					System.out.println(s + " " + bean);
+					Thread.yield();
+				}
+			}
+		}
+}

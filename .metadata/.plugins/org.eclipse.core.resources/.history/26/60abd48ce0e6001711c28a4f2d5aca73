@@ -1,0 +1,23 @@
+package com.chedl.controller;
+
+public class Test extends Thread{
+	
+		private Task task;  
+		  
+	    public Test(Task task) {  
+	        this.task = task;  
+	    }  
+
+		public void run() {
+			task.fun();
+		}
+		
+
+		public static void main(String[] args) {
+			Task taska = new Task();
+			MyThread t1 = new MyThread(taska);
+			MyThread t2 = new MyThread(taska);
+			t1.start();
+			t2.start();
+		}
+}

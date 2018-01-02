@@ -1,0 +1,77 @@
+miPush params
+#ios apple store
+#IosAppID=2882303761517530704
+#IosAppKey=5501753091704
+#IosAppSecret=xH+atG8AnVuk0N1tARcpBw==
+
+#ios dandelion
+IosAppID=2882303761517556610
+IosAppKey=5851755688610
+IosAppSecret=+hv78sqmSepoeHvX5/VRgw==
+
+#ios 0:test 1:online
+PushEnvironment=1
+
+#android test
+
+#AndroidAppID=2882303761517514447
+#AndroidAppKey=5801751461447
+#AndroidAppSecret=KUpqscUUs4k+CrBjari90A==
+#AndroidPACKAGENAME=com.yaolaisale.activity
+
+AndroidAppID=2882303761517556684
+AndroidAppKey=5311755610684
+AndroidAppSecret=qzLrHuceKksIR4KSmMJcaw==
+AndroidPACKAGENAME=com.yaolaizaixian.merchant
+
+#android online
+#AndroidAppID=2882303761517515140
+#AndroidAppKey=5231751575140
+#AndroidAppSecret=9s56SB12AxPqrji5Cqn3+g==
+#AndroidPACKAGENAME=com.yaolaisale.activity
+
+#*********erp online***********
+#imgPath=https://img.yaolaivip.com
+#frontProductUrl=https://www.yaolaivip.com/front/product/product_info
+#http=https://
+#wxZhengshu= /usr/local/tomcat_erp/webapps/chinapay/apiclient_cert.p12
+#myUrl=https://erp.yaolaivip.com
+#pdfVideoUrl=223.202.198.40:8080/file/WebRoot/
+#specialFrontPath=https://erp.yaolaivip.com
+#specialFrontUrl=http://www.yaolaivip.com/front/special/createSpecial
+#specialFrontUploadJSP=http://www.yaolaivip.com/front/views/special/erp_special
+
+#*********erp test**************
+imgPath=http://192.168.120.94
+frontProductUrl=https://front1.yaolaivip.com/front/product/product_info
+#http=https://
+#wxZhengshu= /chinapay/apiclient_cert.p12
+#myUrl=https://erp1.yaolaivip.com
+#storeUrl=https://erp.yaolaivip.com
+#pdfVideoUrl=https://123.57.162.163:8080/file/WebRoot/
+
+specialFrontPath=https://erp1.yaolaivip.com
+specialFrontUrl=https://front1.yaolaivip.com/front/special/createSpecial
+specialFrontUploadJSP=https://front1.yaolaivip.com/front/views/special/erp_special
+#imgUploadMaxSize=512000
+
+
+#*********erp local**************
+wxZhengshu= D:/apiclient_cert.p12
+myUrl=http://cdl.yaolaivip.com/erp
+storeUrl=https://erp.yaolaivip.com
+pdfVideoUrl=http://192.168.120.94:8090/file/WebRoot/
+http=http://
+#specialFrontUrl=http://192.168.120.94:8090/front/special/createSpecial
+#specialFrontUploadJSP=http://192.168.120.94:8090/front/views/special/erp_special
+imgUploadMaxSize=512000
+
+#*********mail**************
+mailUsername=errorlog@yaolaivip.com
+mailPassword=123yaolaiVIP
+
+#*********job-refundRemind**************
+refundRemindPhone=18610325887,13910635659,18701579866,13683069802
+refundRemindMail=liuye@yaolaivip.com,xuesongjia@yaolaivip.com,liyinuo@yaolaivip.com,liyonghong@yaolaivip.com
+#*********default shiptype**************
+defaultShipType=100

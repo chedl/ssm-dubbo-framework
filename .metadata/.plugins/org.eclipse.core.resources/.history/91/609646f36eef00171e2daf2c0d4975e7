@@ -1,0 +1,23 @@
+#############nmw##mster####################################################################
+master.jdbc.driver.class=com.mysql.jdbc.Driver
+master.jdbc.url=jdbc:mysql://127.0.0.1:3306/test?useOldAliasMetadataBehavior=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+master.jdbc.username=root
+master.jdbc.password=root
+master.jdbc.default.read.only=false
+master.jdbc.filters=stat
+master.jdbc.max.active=15
+master.jdbc.initial.size=1
+master.jdbc.max.wait=60000
+master.jdbc.remove.abandoned=true
+master.jdbc.remove.abandoned.timeout=180
+master.jdbc.min.idle=1
+master.jdbc.time.between.eviction.runs.millis=60000
+master.jdbc.min.evictable.idle.time.millis=300000
+master.jdbc.validation.query=SELECT 1
+master.jdbc.test.while.idle=true
+master.jdbc.test.on.borrow=false
+master.jdbc.test.on.return=false
+master.jdbc.pool.prepared.statements=true
+master.jdbc.max.pool.prepared.statement.per.connection.size=50
+master.jdbc.max.open.prepared.statements=100
+

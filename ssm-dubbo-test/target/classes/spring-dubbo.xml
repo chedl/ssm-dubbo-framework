@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/tx 			
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://code.alibabatech.com/schema/dubbo 
+	http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
+
+	<!-- 服务消费方应用名称，不要与服务提供方应用名称一样 -->
+	<dubbo:application name="test" />
+
+	<!-- 读取dubbo配置文件 -->
+	<bean id="dubboConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true" />  
+		<property name="location">
+			<value>classpath:dubbo.properties</value>
+		</property>
+	</bean>
+	
+	<!-- 使用zookeeper注册中心暴露服务地址 -->
+	<dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}" />
+
+	<!-- 调用服务提供方暴露的接口，可以像使用本地bean一样使用userService -->
+	<dubbo:reference id="userService" interface="com.chedl.service.user.UserService" protocol="dubbo"/>
+</beans>
